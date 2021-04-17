@@ -2,6 +2,7 @@ name: Do Something That Needs Scheduled
 on:
   push:
   workflow_dispatch:
+    inputs:
   repository_dispatch:
     types: test
 jobs:
