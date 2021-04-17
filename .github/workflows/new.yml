@@ -1,9 +1,8 @@
 name: Do Something That Needs Scheduled
 on:
+  workflow_dispatch:
   repository_dispatch:
     types: test
-  schedule:
-    - cron:  '*/5 * * * *'
 jobs:
   build:
     name: Run Some Scheduled Thing
